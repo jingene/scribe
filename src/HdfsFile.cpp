@@ -125,7 +125,7 @@ bool HdfsFile::write(const std::string& data) {
 
 void HdfsFile::flush() {
   if (hfile) {
-    hdfsFlush(fileSys, hfile);
+    hdfsHFlush(fileSys, hfile);
   }
 }
 
